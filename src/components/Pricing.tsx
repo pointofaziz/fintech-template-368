@@ -16,7 +16,7 @@ const Pricing = () => {
         "Email support",
         "Basic job matching"
       ],
-      buttonText: "Get Started",
+      buttonText: "Start Free",
       buttonVariant: "outline",
       popular: false
     },
@@ -34,9 +34,9 @@ const Pricing = () => {
         "Live chat support",
         "5 LinkedIn posts/month"
       ],
-      buttonText: "Start 14-day trial",
+      buttonText: "Get Basic",
       buttonVariant: "default",
-      popular: true
+      popular: false
     },
     {
       name: "Pro",
@@ -45,17 +45,15 @@ const Pricing = () => {
       description: "For professionals seeking premium career advancement",
       features: [
         "50 resume optimizations/month",
-        "20 interview prep sessions",
+        "10 interview prep sessions",
         "Advanced analytics",
-        "Career coaching calls",
         "Industry insights",
-        "Phone support",
         "All premium features",
         "20 viral LinkedIn posts/month"
       ],
-      buttonText: "Contact Sales",
+      buttonText: "Get Pro",
       buttonVariant: "outline",
-      popular: false
+      popular: true
     },
     {
       name: "Premium",
