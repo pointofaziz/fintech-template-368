@@ -4,21 +4,21 @@ import React from 'react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Our payment processing efficiency increased by 40% and transaction failures dropped to near zero. The automation features are game-changing.",
-      author: "Sarah Johnson",
-      position: "CFO at TechCorp",
+      quote: "I went from 0 callbacks to 5 interviews in 2 weeks. The AI optimization made my resume stand out instantly. This platform is game-changing.",
+      author: "Aizada Tenisbek kyzy",
+      position: "Supply Chain at P&G",
       avatar: "bg-cosmic-light/30"
     },
     {
-      quote: "The real-time analytics and fraud detection capabilities have saved us millions. We can spot issues before they become problems.",
-      author: "Michael Chen",
-      position: "Head of Risk at FinanceFlow",
+      quote: "The interview prep and salary insights saved me months of preparation. I spotted exactly what hiring managers wanted before the interview.",
+      author: "Mohamed Turki",
+      position: "ML Data Associate at Amazon",
       avatar: "bg-cosmic-light/20"
     },
     {
-      quote: "Compliance used to be a nightmare. Now our regulatory reporting is automated and we're always audit-ready.",
-      author: "Leila Rodriguez",
-      position: "Operations Director at GlobalPay",
+      quote: "Job searching used to be a nightmare. Now my applications are targeted and strategic - I'm always interview-ready.",
+      author: "Alima Kaidarova",
+      position: "Associate Network Engineer at Visa",
       avatar: "bg-cosmic-light/40"
     }
   ];
@@ -31,10 +31,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-foreground">
-            Trusted by finance teams worldwide
+            Trusted by international professionals in Europe
           </h2>
           <p className="text-muted-foreground text-lg">
-            See how our platform transforms financial operations for businesses
+            See how our platform transforms careers and accelerates job search success
           </p>
         </div>
         
