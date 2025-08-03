@@ -8,146 +8,92 @@ import { Task } from './TaskCard';
 const initialColumns: Column[] = [
   {
     id: 'todo',
-    title: 'To Do',
+    title: 'Ready to Apply',
     color: 'muted',
     tasks: [
       {
         id: 't1',
-        title: 'Update landing page hero section',
-        description: 'Review new design mockups and update copy',
-        tag: { color: 'purple', label: 'Design' },
-        dueDate: 'May 20',
+        title: 'Senior React Developer at Stripe',
+        description: '89% match • Resume tailored • Keywords optimized',
+        tag: { color: 'purple', label: 'High Priority' },
+        dueDate: 'Apply by May 20',
         assignees: 2,
         progress: { completed: 3, total: 5 }
       },
       {
         id: 't2',
-        title: 'Social media campaign planning',
-        description: 'Outline Q2 campaign goals and content calendar',
-        tag: { color: 'accent', label: 'Marketing' },
-        dueDate: 'May 22',
+        title: 'Product Manager at Airbnb',
+        description: '92% match • Growth metrics highlighted',
+        tag: { color: 'accent', label: 'Perfect Match' },
+        dueDate: 'Apply by May 22',
         assignees: 1,
         progress: { completed: 0, total: 4 }
-      },
-      {
-        id: 't3',
-        title: 'Set up automated testing',
-        description: 'Configure CI/CD pipeline for test automation',
-        tag: { color: 'blue', label: 'Development' },
-        dueDate: 'May 24',
-        assignees: 2,
-        progress: { completed: 0, total: 6 }
-      },
-      {
-        id: 't4',
-        title: 'Create brand style guide',
-        description: 'Document colors, typography, and UI components',
-        tag: { color: 'purple', label: 'Design' },
-        dueDate: 'May 25',
-        assignees: 1,
-        progress: { completed: 0, total: 3 }
       }
     ]
   },
   {
     id: 'in-progress',
-    title: 'In Progress',
+    title: 'Applied & Waiting',
     color: 'blue',
     tasks: [
       {
         id: 't5',
-        title: 'API integration with payment gateway',
-        description: 'Connect payment processor and test transactions',
-        tag: { color: 'blue', label: 'Development' },
-        dueDate: 'May 18',
+        title: 'DevOps Engineer at Netflix',
+        description: 'Applied 3 days ago • AWS skills emphasized',
+        tag: { color: 'blue', label: 'Pending' },
+        dueDate: 'Response by May 18',
         assignees: 1,
         progress: { completed: 2, total: 3 }
       },
       {
         id: 't6',
-        title: 'SEO optimization',
-        description: 'Improve meta descriptions and keywords across site',
-        tag: { color: 'accent', label: 'Marketing' },
-        dueDate: 'May 19',
+        title: 'UX Designer at Figma',
+        description: 'Applied 1 week ago • Portfolio link added',
+        tag: { color: 'accent', label: 'Follow Up' },
+        dueDate: 'Response by May 19',
         assignees: 2,
         progress: { completed: 5, total: 8 }
-      },
-      {
-        id: 't7',
-        title: 'Mobile responsive design',
-        description: 'Optimize UI for tablets and mobile devices',
-        tag: { color: 'purple', label: 'Design' },
-        dueDate: 'May 17',
-        assignees: 1,
-        progress: { completed: 3, total: 4 }
       }
     ]
   },
   {
     id: 'in-review',
-    title: 'In Review',
+    title: 'Interview Stage',
     color: 'amber',
     tasks: [
       {
         id: 't8',
-        title: 'Email newsletter content',
-        description: 'Review draft and provide feedback',
-        tag: { color: 'accent', label: 'Marketing' },
-        dueDate: 'May 15',
+        title: 'Full Stack Dev at Discord',
+        description: 'Phone screen tomorrow • Interview prep: 15 questions ready',
+        tag: { color: 'accent', label: 'Interview' },
+        dueDate: 'Tomorrow 2PM',
         assignees: 1,
         progress: { completed: 4, total: 5 }
       },
       {
         id: 't9',
-        title: 'User authentication system',
-        description: 'Code review for login and registration flows',
-        tag: { color: 'blue', label: 'Development' },
-        dueDate: 'May 16',
+        title: 'Data Scientist at Spotify',
+        description: 'Final round Friday • Salary range: $165k-195k',
+        tag: { color: 'blue', label: 'Final Round' },
+        dueDate: 'Friday 10AM',
         assignees: 2,
         progress: { completed: 6, total: 6 }
-      },
-      {
-        id: 't10',
-        title: 'Icon set redesign',
-        description: 'Review updated icon set for consistent branding',
-        tag: { color: 'purple', label: 'Design' },
-        dueDate: 'May 14',
-        assignees: 1,
-        progress: { completed: 12, total: 12 }
       }
     ]
   },
   {
     id: 'completed',
-    title: 'Completed',
+    title: 'Offers Received',
     color: 'accent',
     tasks: [
       {
         id: 't11',
-        title: 'Create user flow diagrams',
-        description: 'Document onboarding process for new users',
-        tag: { color: 'purple', label: 'Design' },
-        dueDate: 'May 10',
+        title: 'Backend Engineer at Shopify',
+        description: 'Offer: $155k + equity • Negotiation tips ready',
+        tag: { color: 'purple', label: 'Offer' },
+        dueDate: 'Respond by May 10',
         assignees: 1,
         progress: { completed: 5, total: 5 }
-      },
-      {
-        id: 't12',
-        title: 'Setup analytics tracking',
-        description: 'Implement event tracking across main user flows',
-        tag: { color: 'blue', label: 'Development' },
-        dueDate: 'May 9',
-        assignees: 1,
-        progress: { completed: 4, total: 4 }
-      },
-      {
-        id: 't13',
-        title: 'Competitive analysis report',
-        description: 'Research competitors and document findings',
-        tag: { color: 'accent', label: 'Marketing' },
-        dueDate: 'May 8',
-        assignees: 2,
-        progress: { completed: 7, total: 7 }
       }
     ]
   }

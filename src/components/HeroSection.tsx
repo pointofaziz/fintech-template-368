@@ -60,7 +60,7 @@ const HeroSection = () => {
                 <div className="h-8 w-8 rounded-md bg-muted flex items-center justify-center">
                   <div className="h-3 w-3 rounded-sm bg-foreground"></div>
                 </div>
-                <span className="text-foreground font-medium">Payment Processing Pipeline</span>
+                <span className="text-foreground font-medium">Job Search Optimization Hub</span>
               </div>
               
               <div className="flex items-center gap-3">
@@ -86,19 +86,19 @@ const HeroSection = () => {
                   <div className="space-y-1">
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md bg-muted text-foreground">
                       <div className="h-3 w-3 rounded-sm bg-foreground"></div>
-                      <span>Payments</span>
+                      <span>Resumes</span>
                     </div>
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-sm bg-muted-foreground/30"></div>
-                      <span>Analytics</span>
+                      <span>My applications</span>
                     </div>
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-sm bg-muted-foreground/30"></div>
-                      <span>Compliance</span>
+                      <span>Job Tracker</span>
                     </div>
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-sm bg-muted-foreground/30"></div>
-                      <span>Reports</span>
+                      <span>Performance</span>
                     </div>
                   </div>
                 </div>
@@ -108,15 +108,15 @@ const HeroSection = () => {
                   <div className="space-y-1">
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-full bg-muted-foreground/60"></div>
-                      <span>Treasury</span>
+                      <span>CV Building</span>
                     </div>
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-full bg-muted-foreground/50"></div>
-                      <span>Risk</span>
+                      <span>Interview Prep</span>
                     </div>
                     <div className="flex items-center gap-3 px-3 py-2 rounded-md text-muted-foreground hover:bg-muted/50">
                       <div className="h-3 w-3 rounded-full bg-muted-foreground/40"></div>
-                      <span>Operations</span>
+                      <span>Offer Negotiation</span>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const HeroSection = () => {
                 {/* Board Header */}
                 <div className="flex items-center justify-between mb-6 min-w-0">
                   <div className="flex items-center gap-2 flex-shrink-0">
-                    <h3 className="font-medium text-foreground">Transactions</h3>
+                    <h3 className="font-medium text-foreground">Job Applications</h3>
                     <span className="text-xs bg-muted px-2 py-1 rounded-full text-muted-foreground">23</span>
                   </div>
                   
@@ -145,7 +145,7 @@ const HeroSection = () => {
                       </svg>
                     </div>
                     <div className="h-8 px-3 rounded-md bg-foreground text-background flex items-center justify-center text-sm font-medium whitespace-nowrap">
-                      New Transaction
+                      Add New Job
                     </div>
                   </div>
                 </div>
