@@ -32,7 +32,7 @@ const Pricing = () => {
         "Priority job matching",
         "Salary insights",
         "Live chat support",
-        "LinkedIn post writing"
+        "5 LinkedIn posts/month"
       ],
       buttonText: "Start 14-day trial",
       buttonVariant: "default",
@@ -41,6 +41,7 @@ const Pricing = () => {
     {
       name: "Pro",
       price: "€14",
+      period: "per month",
       description: "For professionals seeking premium career advancement",
       features: [
         "50 resume optimizations/month",
@@ -49,9 +50,28 @@ const Pricing = () => {
         "Career coaching calls",
         "Industry insights",
         "Phone support",
-        "All premium features"
+        "All premium features",
+        "20 viral LinkedIn posts/month"
       ],
       buttonText: "Contact Sales",
+      buttonVariant: "outline",
+      popular: false
+    },
+    {
+      name: "Premium",
+      price: "€49",
+      period: "per month",
+      description: "For unlimited career advancement and maximum results",
+      features: [
+        "Unlimited resume optimizations",
+        "Unlimited interview sessions",
+        "Unlimited LinkedIn posts",
+        "Priority support",
+        "Advanced career analytics",
+        "Custom templates",
+        "Salary negotiation coaching"
+      ],
+      buttonText: "Go Premium",
       buttonVariant: "outline",
       popular: false
     }
@@ -69,7 +89,7 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {plans.map((plan, index) => (
             <div 
               key={index}
