@@ -8,48 +8,48 @@ const Features = () => {
   
   const features = [
     {
-      title: "Payment Automation",
-      description: "Automate payment processing and reconciliation to reduce manual errors and improve efficiency.",
+      title: "Resume Optimization",
+      description: "AI tailors your resume for every job posting to beat ATS systems and impress recruiters.",
       expandedDescription: "Set up automated payment workflows with custom approval chains. Schedule recurring payments, automate invoice processing, and create conditional rules for different transaction types. Reduce manual intervention and ensure compliance with financial regulations.",
       icon: (
         <Layers size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Real-time Analytics",
-      description: "Monitor financial performance with real-time dashboards and comprehensive reporting.",
+      title: "Application Tracking",
+      description: "Monitor your job search progress with real-time dashboards and comprehensive reporting.",
       expandedDescription: "Track key financial metrics with customizable dashboards. Monitor cash flow, payment volumes, and transaction success rates in real-time. Generate detailed reports for stakeholders and identify trends before they impact your business.",
       icon: (
         <Grid3x3 size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Risk Management",
-      description: "Advanced fraud detection and risk assessment tools to protect your business.",
+      title: "Interview Preparation",
+      description: "Advanced AI coaching and question preparation tools to ace every interview.",
       expandedDescription: "Utilize machine learning algorithms to detect suspicious transactions and prevent fraud. Set up custom risk rules, monitor transaction patterns, and receive instant alerts for unusual activity. Protect your business with enterprise-grade security measures.",
       icon: (
         <LayoutDashboard size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Compliance Tools",
-      description: "Built-in compliance features to meet regulatory requirements effortlessly.",
+      title: "ATS Optimization",
+      description: "Built-in keyword optimization to meet ATS requirements and pass initial screening.",
       expandedDescription: "Stay compliant with financial regulations across multiple jurisdictions. Automated KYC/AML checks, transaction monitoring, and regulatory reporting. Generate audit trails and maintain documentation to meet compliance standards.",
       icon: (
         <ListCheck size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "Multi-currency Support",
-      description: "Process payments in multiple currencies with real-time exchange rates.",
+      title: "LinkedIn Post Writing",
+      description: "Viral content helps you establish authority, social proof and build your personal brand that HR can't ignore.",
       expandedDescription: "Accept and process payments in over 150 currencies with competitive exchange rates. Automatic currency conversion, hedging tools, and multi-currency accounting. Expand your business globally with seamless international payment processing.",
       icon: (
         <Star size={24} className="text-cosmic-accent" />
       )
     },
     {
-      title: "API Integration",
-      description: "Powerful APIs for seamless integration with your existing financial systems.",
+      title: "Career Analytics",
+      description: "Powerful insights and performance tracking to optimize your job search strategy.",
       expandedDescription: "Connect with your ERP, accounting software, and banking systems through our comprehensive APIs. Real-time webhooks, detailed documentation, and SDKs for popular programming languages. Build custom integrations that fit your unique business needs.",
       icon: (
         <BookOpen size={24} className="text-cosmic-accent" />
@@ -66,10 +66,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter">
-            Everything your business needs
+            Everything your job search needs
           </h2>
           <p className="text-cosmic-muted text-lg">
-            Comprehensive fintech solutions to streamline your financial operations and drive growth
+            AI-powered tools to optimize your applications, track your progress, and land better offers
           </p>
         </div>
         
