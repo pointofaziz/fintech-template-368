@@ -17,7 +17,7 @@ const Pricing = () => {
         "Basic job matching"
       ],
       buttonText: "Start Free",
-      buttonVariant: "outline",
+      buttonVariant: "default",
       popular: false
     },
     {
@@ -52,7 +52,7 @@ const Pricing = () => {
         "20 viral LinkedIn posts/month"
       ],
       buttonText: "Get Pro",
-      buttonVariant: "outline",
+      buttonVariant: "default",
       popular: true
     },
     {
@@ -70,7 +70,7 @@ const Pricing = () => {
         "Salary negotiation coaching"
       ],
       buttonText: "Go Premium",
-      buttonVariant: "outline",
+      buttonVariant: "default",
       popular: false
     }
   ];
