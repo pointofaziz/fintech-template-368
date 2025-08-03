@@ -8,48 +8,48 @@ const Pricing = () => {
     {
       name: "Starter",
       price: "Free",
-      description: "Perfect for small businesses starting their fintech journey",
+      description: "Perfect for testing our AI-powered resume optimization",
       features: [
-        "Up to 100 transactions/month",
-        "Basic payment processing",
-        "Standard reporting",
+        "3 resume optimizations/month",
+        "1 interview prep session",
+        "Basic ATS scanning",
         "Email support",
-        "Basic fraud protection"
+        "Basic job matching"
       ],
       buttonText: "Get Started",
       buttonVariant: "outline",
       popular: false
     },
     {
-      name: "Professional",
-      price: "$99",
+      name: "Basic",
+      price: "€9",
       period: "per month",
-      description: "Ideal for growing businesses with higher transaction volumes",
+      description: "Ideal for active job seekers ready to get serious",
       features: [
-        "Up to 10,000 transactions/month",
-        "Advanced payment processing",
-        "Real-time analytics",
-        "Multi-currency support",
-        "Advanced fraud protection",
-        "API access",
-        "Priority support"
+        "30 resume optimizations/month",
+        "10 interview prep sessions",
+        "Premium templates",
+        "Priority job matching",
+        "Salary insights",
+        "Live chat support",
+        "LinkedIn post writing"
       ],
       buttonText: "Start 14-day trial",
       buttonVariant: "default",
       popular: true
     },
     {
-      name: "Enterprise",
-      price: "Custom",
-      description: "For large organizations with complex financial operations",
+      name: "Pro",
+      price: "€14",
+      description: "For professionals seeking premium career advancement",
       features: [
-        "Unlimited transactions",
-        "Custom payment workflows",
-        "Advanced compliance tools",
-        "Dedicated infrastructure",
-        "White-label solutions",
-        "Dedicated account manager",
-        "24/7 premium support"
+        "50 resume optimizations/month",
+        "20 interview prep sessions",
+        "Advanced analytics",
+        "Career coaching calls",
+        "Industry insights",
+        "Phone support",
+        "All premium features"
       ],
       buttonText: "Contact Sales",
       buttonVariant: "outline",
@@ -62,10 +62,10 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto space-y-16">
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-foreground">
-            Transparent pricing for every stage
+            Simple pricing for every career stage
           </h2>
           <p className="text-muted-foreground text-lg">
-            Scale your financial operations with plans that grow with your business
+            Choose the plan that fits your job search goals and accelerates your career
           </p>
         </div>
         
@@ -126,7 +126,7 @@ const Pricing = () => {
         </div>
         
         <div className="text-center text-muted-foreground">
-          Have questions? <a href="#" className="text-primary hover:underline">Contact our sales team</a>
+          Have questions? <a href="#" className="text-primary hover:underline">Contact our success team</a>
         </div>
       </div>
     </section>
