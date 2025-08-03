@@ -13,21 +13,30 @@ const initialColumns: Column[] = [
     tasks: [
       {
         id: 't1',
-        title: 'Senior React Developer at Stripe',
-        description: '89% match • Resume tailored • Keywords optimized',
-        tag: { color: 'purple', label: 'High Priority' },
-        dueDate: 'Apply by May 20',
+        title: 'Software Engineer at Google',
+        description: 'Resume tailored for React, Python skills. 94% ATS match score achieved.',
+        tag: { color: 'purple', label: 'Tech' },
+        dueDate: 'May 20',
         assignees: 2,
         progress: { completed: 3, total: 5 }
       },
       {
         id: 't2',
-        title: 'Product Manager at Airbnb',
-        description: '92% match • Growth metrics highlighted',
-        tag: { color: 'accent', label: 'Perfect Match' },
-        dueDate: 'Apply by May 22',
+        title: 'Product Manager at Meta',
+        description: 'Growth metrics and A/B testing skills emphasized in resume.',
+        tag: { color: 'accent', label: 'Product' },
+        dueDate: 'May 25',
         assignees: 1,
         progress: { completed: 0, total: 4 }
+      },
+      {
+        id: 't3',
+        title: 'Full Stack Developer at Stripe',
+        description: 'Payment systems experience highlighted. Interview questions prepared.',
+        tag: { color: 'blue', label: 'Engineering' },
+        dueDate: 'May 24',
+        assignees: 2,
+        progress: { completed: 0, total: 6 }
       }
     ]
   },
@@ -38,21 +47,30 @@ const initialColumns: Column[] = [
     tasks: [
       {
         id: 't5',
-        title: 'DevOps Engineer at Netflix',
-        description: 'Applied 3 days ago • AWS skills emphasized',
-        tag: { color: 'blue', label: 'Pending' },
-        dueDate: 'Response by May 18',
+        title: 'iOS Developer at Apple',
+        description: 'Application submitted. Swift and SwiftUI expertise showcased.',
+        tag: { color: 'blue', label: 'Mobile' },
+        dueDate: 'May 18',
         assignees: 1,
         progress: { completed: 2, total: 3 }
       },
       {
         id: 't6',
         title: 'UX Designer at Figma',
-        description: 'Applied 1 week ago • Portfolio link added',
-        tag: { color: 'accent', label: 'Follow Up' },
-        dueDate: 'Response by May 19',
+        description: 'Portfolio optimized. Design systems experience highlighted.',
+        tag: { color: 'accent', label: 'Design' },
+        dueDate: 'May 17',
         assignees: 2,
         progress: { completed: 5, total: 8 }
+      },
+      {
+        id: 't7',
+        title: 'Data Scientist at Netflix',
+        description: 'ML algorithms and recommendation systems featured prominently.',
+        tag: { color: 'purple', label: 'Data' },
+        dueDate: 'May 22',
+        assignees: 1,
+        progress: { completed: 3, total: 4 }
       }
     ]
   },
@@ -63,21 +81,30 @@ const initialColumns: Column[] = [
     tasks: [
       {
         id: 't8',
-        title: 'Full Stack Dev at Discord',
-        description: 'Phone screen tomorrow • Interview prep: 15 questions ready',
-        tag: { color: 'accent', label: 'Interview' },
-        dueDate: 'Tomorrow 2PM',
+        title: 'Senior Engineer at Microsoft',
+        description: 'Phone screen completed. Final round prep: 12 technical questions ready.',
+        tag: { color: 'accent', label: 'Senior' },
+        dueDate: 'May 15',
         assignees: 1,
         progress: { completed: 4, total: 5 }
       },
       {
         id: 't9',
-        title: 'Data Scientist at Spotify',
-        description: 'Final round Friday • Salary range: $165k-195k',
-        tag: { color: 'blue', label: 'Final Round' },
-        dueDate: 'Friday 10AM',
+        title: 'Backend Engineer at Shopify',
+        description: 'Technical interview scheduled. System design practice completed.',
+        tag: { color: 'blue', label: 'Backend' },
+        dueDate: 'May 16',
         assignees: 2,
         progress: { completed: 6, total: 6 }
+      },
+      {
+        id: 't10',
+        title: 'Frontend Lead at Airbnb',
+        description: 'Team interview next week. Leadership experience emphasized.',
+        tag: { color: 'purple', label: 'Frontend' },
+        dueDate: 'May 14',
+        assignees: 1,
+        progress: { completed: 12, total: 12 }
       }
     ]
   },
