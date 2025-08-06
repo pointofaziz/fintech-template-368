@@ -88,7 +88,7 @@ const Blog = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-24 px-6 md:px-12 overflow-hidden">
+      <section className="relative py-24 px-6 md:px-12 overflow-hidden blog-hero-gradient">
         <div className="absolute inset-0 cosmic-gradient opacity-10" />
         <div className="absolute inset-0 cosmic-grid opacity-20" />
         
