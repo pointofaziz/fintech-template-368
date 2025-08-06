@@ -14,7 +14,7 @@ const Blog = () => {
     date: "August 6, 2025",
     readTime: "5 min read",
     tag: "Resume Tips",
-    tagColor: "bg-blue-500"
+    tagColor: "bg-accent text-accent-foreground"
   };
 
   const blogPosts = [
@@ -22,7 +22,7 @@ const Blog = () => {
       title: "How to Beat ATS Systems in 2025",
       excerpt: "The ultimate guide to getting past applicant tracking systems with AI optimization.",
       tag: "ATS Strategy",
-      tagColor: "bg-teal-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "4 min read",
       author: "Fyxor Team",
       date: "August 5, 2025"
@@ -31,7 +31,7 @@ const Blog = () => {
       title: "LinkedIn Headlines That Get Recruiters' Attention",
       excerpt: "Transform your LinkedIn profile with headlines that make recruiters stop scrolling.",
       tag: "LinkedIn Tips",
-      tagColor: "bg-green-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "3 min read",
       author: "Fyxor Team",
       date: "August 4, 2025"
@@ -40,7 +40,7 @@ const Blog = () => {
       title: "Salary Negotiation Scripts That Actually Work",
       excerpt: "Word-for-word scripts to negotiate 20%+ salary increases, even for remote roles.",
       tag: "Salary Tips",
-      tagColor: "bg-orange-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "6 min read",
       author: "Fyxor Team",
       date: "August 3, 2025"
@@ -49,7 +49,7 @@ const Blog = () => {
       title: "Interview Questions for Tech Roles in 2025",
       excerpt: "Prepare for the most common questions at Google, Meta, Apple, and other top companies.",
       tag: "Interview Prep",
-      tagColor: "bg-purple-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "7 min read",
       author: "Fyxor Team",
       date: "August 2, 2025"
@@ -58,7 +58,7 @@ const Blog = () => {
       title: "Remote Work Resume Optimization Guide",
       excerpt: "How to position yourself as the perfect remote candidate in any industry.",
       tag: "Remote Jobs",
-      tagColor: "bg-indigo-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "5 min read",
       author: "Fyxor Team",
       date: "August 1, 2025"
@@ -67,7 +67,7 @@ const Blog = () => {
       title: "Career Change at 30+: Complete Roadmap",
       excerpt: "Step-by-step guide to successfully switching careers later in your professional life.",
       tag: "Career Change",
-      tagColor: "bg-red-500",
+      tagColor: "bg-muted text-muted-foreground",
       readTime: "8 min read",
       author: "Fyxor Team",
       date: "July 31, 2025"
@@ -75,12 +75,12 @@ const Blog = () => {
   ];
 
   const categories = [
-    { name: "Resume Tips", count: 12, color: "bg-blue-500" },
-    { name: "Interview Prep", count: 8, color: "bg-purple-500" },
-    { name: "LinkedIn Strategy", count: 6, color: "bg-green-500" },
-    { name: "Salary Negotiation", count: 4, color: "bg-orange-500" },
-    { name: "Career Change", count: 5, color: "bg-red-500" },
-    { name: "ATS Strategy", count: 7, color: "bg-teal-500" }
+    { name: "Resume Tips", count: 12, color: "bg-accent" },
+    { name: "Interview Prep", count: 8, color: "bg-accent" },
+    { name: "LinkedIn Strategy", count: 6, color: "bg-accent" },
+    { name: "Salary Negotiation", count: 4, color: "bg-accent" },
+    { name: "Career Change", count: 5, color: "bg-accent" },
+    { name: "ATS Strategy", count: 7, color: "bg-accent" }
   ];
 
   return (
@@ -108,13 +108,13 @@ const Blog = () => {
 
       <main className="flex-1 py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          {/* Featured Post */}
+            {/* Featured Post */}
           <div className="mb-16">
-            <Card className="glassmorphism border-primary/20 hover:border-primary/40 transition-all duration-300 cosmic-glow-subtle">
+            <Card className="cosmic-glass hover:border-accent/40 transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-8 p-8">
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <Badge className={`${featuredPost.tagColor} text-white`}>
+                    <Badge className={featuredPost.tagColor}>
                       {featuredPost.tag}
                     </Badge>
                     <span className="text-sm text-muted-foreground">Featured</span>
@@ -155,17 +155,17 @@ const Blog = () => {
             <div className="lg:col-span-3">
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {blogPosts.map((post, index) => (
-                  <Card key={index} className="glassmorphism border-primary/20 hover:border-primary/40 transition-all duration-300 cosmic-glow-subtle group cursor-pointer">
+                  <Card key={index} className="cosmic-glass hover:border-accent/40 transition-all duration-300 group cursor-pointer">
                     <CardHeader className="space-y-4">
                       <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
                         <div className="text-4xl opacity-20">📄</div>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Badge className={`${post.tagColor} text-white text-xs`}>
+                        <Badge className={`${post.tagColor} text-xs`}>
                           {post.tag}
                         </Badge>
                       </div>
-                      <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl group-hover:text-accent-foreground transition-colors">
                         {post.title}
                       </CardTitle>
                     </CardHeader>
@@ -195,13 +195,13 @@ const Blog = () => {
             {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
               {/* Categories */}
-              <Card className="glassmorphism border-primary/20">
+              <Card className="cosmic-glass">
                 <CardHeader>
                   <CardTitle className="text-lg">Categories</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   {categories.map((category, index) => (
-                    <div key={index} className="flex items-center justify-between hover:text-primary transition-colors cursor-pointer">
+                    <div key={index} className="flex items-center justify-between hover:text-accent-foreground transition-colors cursor-pointer">
                       <div className="flex items-center gap-3">
                         <div className={`w-3 h-3 rounded-full ${category.color}`} />
                         <span className="text-sm">{category.name}</span>
@@ -213,7 +213,7 @@ const Blog = () => {
               </Card>
 
               {/* Newsletter Signup */}
-              <Card className="glassmorphism border-primary/20">
+              <Card className="cosmic-glass">
                 <CardHeader>
                   <CardTitle className="text-lg">Stay Updated</CardTitle>
                   <CardDescription>
@@ -233,13 +233,13 @@ const Blog = () => {
               </Card>
 
               {/* Popular Posts */}
-              <Card className="glassmorphism border-primary/20">
+              <Card className="cosmic-glass">
                 <CardHeader>
                   <CardTitle className="text-lg">Popular Posts</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {blogPosts.slice(0, 3).map((post, index) => (
-                    <div key={index} className="hover:text-primary transition-colors cursor-pointer">
+                    <div key={index} className="hover:text-accent-foreground transition-colors cursor-pointer">
                       <h4 className="text-sm font-medium mb-1">{post.title}</h4>
                       <p className="text-xs text-muted-foreground">{post.readTime}</p>
                     </div>
