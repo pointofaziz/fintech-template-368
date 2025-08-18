@@ -1,13 +1,41 @@
 
 import React from 'react';
+import { cn } from '@/lib/utils';
+import navbarLogoLight from '@/assets/fyxor-logo-navbar.png';
+import navbarLogoDark from '@/assets/fyxor-logo-navbar-dark.png';
 
-const Logo = () => {
+interface LogoProps {
+  variant?: 'navbar' | 'hero';
+  className?: string;
+}
+
+const Logo = ({ variant = 'navbar', className }: LogoProps) => {
+  const sizeClasses = {
+    navbar: 'h-[30px]',
+    hero: 'h-[60px]'
+  };
+
   return (
     <div className="flex items-center">
+      {/* Light mode logo */}
       <img 
-        src="/lovable-uploads/3faba1aa-06ef-42ee-aa67-31c30ede7a3b.png" 
+        src={navbarLogoLight}
         alt="Fyxor" 
-        className="h-12 w-auto"
+        className={cn(
+          sizeClasses[variant],
+          'w-auto dark:hidden',
+          className
+        )}
+      />
+      {/* Dark mode logo */}
+      <img 
+        src={navbarLogoDark}
+        alt="Fyxor" 
+        className={cn(
+          sizeClasses[variant],
+          'w-auto hidden dark:block',
+          className
+        )}
       />
     </div>
   );
