@@ -61,7 +61,7 @@ const Waitlist = () => {
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-balance text-foreground">
               Join the{' '}
-              <span className="cosmic-gradient bg-clip-text text-transparent">
+              <span className="text-primary">
                 Waitlist
               </span>
             </h1>
