@@ -45,7 +45,7 @@ const Header = () => {
     <div className="sticky top-0 z-50 pt-8 px-4">
       <header className="w-full max-w-7xl mx-auto py-3 px-6 md:px-8 flex items-center justify-between">
         <div className="p-3">
-          <Logo />
+          <Logo isDarkMode={isDarkMode} />
         </div>
         
         {/* Mobile menu button */}
@@ -155,7 +155,13 @@ const Header = () => {
             <Sun size={18} className={`${!isDarkMode ? 'text-primary' : 'text-muted-foreground'}`} />
           </div>
           <div className="rounded-2xl">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-muted">Log in</Button>
+            <Button 
+              variant="ghost" 
+              className="text-muted-foreground hover:text-foreground hover:bg-muted"
+              onClick={() => window.location.href = 'https://trial.fyxor.eu/login'}
+            >
+              Log in
+            </Button>
           </div>
         </div>
       </header>

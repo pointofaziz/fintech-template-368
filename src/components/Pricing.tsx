@@ -135,6 +135,7 @@ const Pricing = () => {
                       : "w-full border-border text-foreground hover:bg-muted"
                   }
                   variant={plan.buttonVariant as "default" | "outline"}
+                  onClick={() => window.location.href = 'https://trial.fyxor.eu/login'}
                 >
                   {plan.buttonText}
                 </Button>

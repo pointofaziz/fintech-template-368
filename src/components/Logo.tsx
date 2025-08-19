@@ -15,27 +15,19 @@ const Logo = ({ variant = 'navbar', className }: LogoProps) => {
     hero: 'h-[60px]'
   };
 
+interface LogoProps {
+  isDarkMode?: boolean;
+}
+
+const Logo = ({ isDarkMode = false }: LogoProps) => {
+  const logoSrc = isDarkMode ? '/3.png' : '/2.png';
+  
   return (
-    <div className="flex items-center">
-      {/* Light mode logo */}
+    <div className="flex items-center gap-2">
       <img 
-        src={navbarLogoLight}
-        alt="Fyxor" 
-        className={cn(
-          sizeClasses[variant],
-          'w-auto dark:hidden',
-          className
-        )}
-      />
-      {/* Dark mode logo */}
-      <img 
-        src={navbarLogoDark}
-        alt="Fyxor" 
-        className={cn(
-          sizeClasses[variant],
-          'w-auto hidden dark:block',
-          className
-        )}
+        src={logoSrc} 
+        alt="Logo" 
+        className="h-10 w-auto"
       />
     </div>
   );
