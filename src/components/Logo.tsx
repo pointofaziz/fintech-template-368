@@ -1,12 +1,20 @@
 
 import React from 'react';
 
-const Logo = () => {
+interface LogoProps {
+  isDarkMode?: boolean;
+}
+
+const Logo = ({ isDarkMode = false }: LogoProps) => {
+  const logoSrc = isDarkMode ? '/3.png' : '/2.png';
+  
   return (
     <div className="flex items-center gap-2">
-      <div className="h-8 w-8 rounded-md bg-primary flex items-center justify-center">
-        <div className="h-4 w-4 rounded-sm bg-primary-foreground"></div>
-      </div>
+      <img 
+        src={logoSrc} 
+        alt="Logo" 
+        className="h-10 w-auto"
+      />
     </div>
   );
 };
